@@ -1,0 +1,11 @@
+<h1> cadetfiles </h1>
+
+{% if aca_dep %}
+    <ul>
+    {% for department in aca_dep %}
+        <li><a href="/polls/{{ department.dept_code}}/">{{department.dept_name}}  </a></li>
+    {% endfor %}
+   </ul>
+{% else %}
+    <p>No departments are available.</p>
+{% endif %}

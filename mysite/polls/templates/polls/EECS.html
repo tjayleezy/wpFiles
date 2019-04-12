@@ -1,0 +1,12 @@
+<h1> cadetfiles </h1>
+
+{% if aca_class %}
+    <ul>
+    {% for class in aca_class%}
+        <li><a href="/polls/{{ class.class_code }}/">{{ class.class_code }}  
+        </a></li>
+    {% endfor %}
+   </ul>
+{% else %}
+    <p>No classes are available.</p>
+{% endif %}
